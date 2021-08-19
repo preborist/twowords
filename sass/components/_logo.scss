@@ -1,0 +1,33 @@
+.logo {
+  transition: 0.2s;
+
+  @media screen and(min-width: 1101px) {
+    position: fixed;
+    width: 200px;
+    top: 30px;
+    left: 50px;
+  }
+  @media screen and(max-width: 1100px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo__link {
+  @media screen and (max-width: 576px) {
+    width: 140px;
+  }
+  @media screen and (min-width: 577px) {
+    width: 200px;
+  }
+}
+
+.logo__image {
+}

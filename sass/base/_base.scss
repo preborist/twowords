@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  //   font-family: $primary-font;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  //   color: $primary-text-color;
+  //   background-color: $primary-bg-color;
+
+  background: url(../../images/ibg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
