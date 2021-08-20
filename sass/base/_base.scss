@@ -9,13 +9,12 @@ html {
 }
 
 body {
-  //   font-family: $primary-font;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 1rem;
+  line-height: 1.5;
   letter-spacing: 0.03em;
-  //   color: $primary-text-color;
-  //   background-color: $primary-bg-color;
 
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
   background: url(../../images/ibg.jpg) center center no-repeat;
   background-size: cover;
 }
@@ -41,4 +40,8 @@ img {
 
 .link {
   text-decoration: none;
+}
+
+body.no_scroll {
+  overflow: hidden;
 }

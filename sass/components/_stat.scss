@@ -1,0 +1,82 @@
+.main_stat {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  pointer-events: none;
+  height: 100px;
+  z-index: 999;
+
+  @media screen and(max-width: 900px) {
+    display: none;
+  }
+}
+
+.main_stat .main_stat_block {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.main_stat .main_stat_block.online {
+  left: 20px;
+}
+
+.main_stat .main_stat_block.lasts {
+  right: 20px;
+}
+
+.main_stat .main_stat_block .num {
+  position: absolute;
+  width: 50px;
+  top: 5px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.main_stat .main_stat_block .text {
+  border: 5px solid;
+  color: #c4f1c5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 7px 12px;
+}
+.main_stat .main_stat_block.online .num {
+  background-color: #053607;
+  left: 5px;
+}
+
+.main_stat .main_stat_block.online .text {
+  padding-left: calc(12px + 43px);
+  background-color: #13d61c;
+  border-color: #13d61c;
+}
+.main_stat .main_stat_block .text span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main_stat .main_stat_block.lasts .num {
+  background-color: #132752;
+  right: 5px;
+}
+
+.main_stat .main_stat_block.lasts .text {
+  padding-right: calc(12px + 43px);
+  background-color: #1eacf5;
+  border-color: #1eacf5;
+  text-align: right;
+}
