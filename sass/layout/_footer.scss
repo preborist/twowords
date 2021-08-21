@@ -13,17 +13,13 @@
 #footer .container {
   margin-top: 20px;
   position: relative;
-
   flex: 1;
 }
 
 footer ul.menu_footer {
   list-style: none;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
   color: #fff;
   margin: 0;
@@ -31,7 +27,6 @@ footer ul.menu_footer {
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
-    // padding-bottom: 15px !important;
   }
 }
 

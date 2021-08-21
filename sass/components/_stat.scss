@@ -34,11 +34,8 @@
   width: 50px;
   top: 5px;
   height: 50px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
   font-weight: bold;
   border-radius: 50%;
@@ -52,6 +49,7 @@
   line-height: 18px;
   padding: 7px 12px;
 }
+
 .main_stat .main_stat_block.online .num {
   background-color: #053607;
   left: 5px;
@@ -62,6 +60,7 @@
   background-color: #13d61c;
   border-color: #13d61c;
 }
+
 .main_stat .main_stat_block .text span {
   display: block;
   font-weight: bold;

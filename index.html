@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <div class="logo">
         <a href="#" class="logo__link"
@@ -31,6 +32,7 @@
       </div>
     </header>
     <main>
+      <!-- HERO SECTION -->
       <div class="hero container">
         <h1 class="title">
           Уникальное новшество от программистов, благодаря которому обычные
@@ -38,6 +40,8 @@
           уделяя всего 15 минут в день! Посмотрите видео, пройдите бесплатную
           регистрацию и получите свою первую выплату уже завтра.
         </h1>
+
+        <!-- PLAYER -->
         <div class="player">
           <div class="embed-responsive embed-responsive-16by9">
             <div class="volume">
@@ -49,10 +53,12 @@
             </video>
           </div>
         </div>
+
+        <!-- fORM -->
         <div class="flex_form_wr">
           <form
             class="flex_form container"
-            action="https://formspree.io/f/xrgroylw"
+            action="https://formsubmit.co/vetal.marus@gmail.com"
             method="POST"
           >
             <div class="row inputs">
@@ -101,6 +107,8 @@
           </div>
         </div>
       </div>
+
+      <!-- FOOTER -->
       <footer id="footer">
         <div class="container">
           <ul class="menu_footer">
@@ -110,6 +118,8 @@
           <div class="copyright">Copyright © 2021 – Общее дело</div>
         </div>
       </footer>
+
+      <!-- MODAL FORM -->
       <div class="modal_wr modal">
         <div class="closing"></div>
         <div class="modal_close_wr">
@@ -127,7 +137,10 @@
               <div class="modal__form_title">
                 Пройдите регистрацию и получите бесплатный доступ к программе!
               </div>
-              <form action="https://formspree.io/f/xrgroylw" method="POST">
+              <form
+                action="https://formsubmit.co/vetal.marus@gmail.com"
+                method="POST"
+              >
                 <div class="main__form_field modal__form_field">
                   <i class="fas fa-user-circle"></i>
                   <input
@@ -148,7 +161,7 @@
                   />
                 </div>
                 <div class="header__button">
-                  <button>Получить доступ</button>
+                  <button type="submit">Получить доступ</button>
                   <div
                     class="col-xs-12 offer_row"
                     style="background-color: #fff"
@@ -176,6 +189,8 @@
           </div>
         </div>
       </div>
+
+      <!-- STATISTIC -->
       <div class="main_stat">
         <div class="main_stat_block online">
           <div class="num">123</div>
@@ -195,6 +210,7 @@
     </main>
     <script src="//cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
+    <!-- Hlsplagin -->
     <script>
       var video = document.getElementById('video');
       var videoSrc = './video/i/video.m3u8';
@@ -213,11 +229,13 @@
       }
     </script>
 
+    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- My scripts -->
     <script src="./js/index.js" type="module"></script>
   </body>
 </html>

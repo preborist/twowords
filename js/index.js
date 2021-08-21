@@ -45,11 +45,13 @@ function onCloseBtnClick() {
 }
 
 function openModal() {
-  refs.modal.classList.add('active');
-  refs.body.classList.add('no_scroll');
-  refs.modalClose.addEventListener('click', onCloseBtnClick);
-  refs.modalCloseIcon.addEventListener('click', onCloseBtnClick);
-  refs.body.removeEventListener('mouseleave', openModal);
+  setTimeout(() => {
+    refs.modal.classList.add('active');
+    refs.body.classList.add('no_scroll');
+    refs.modalClose.addEventListener('click', onCloseBtnClick);
+    refs.modalCloseIcon.addEventListener('click', onCloseBtnClick);
+    refs.body.removeEventListener('mouseleave', openModal);
+  }, 1000);
 }
 
 refs.body.addEventListener('mouseleave', openModal);

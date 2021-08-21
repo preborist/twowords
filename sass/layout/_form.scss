@@ -112,9 +112,9 @@ body .container .button_yes {
   }
 }
 
-body .container .button_yes:hover {
+body .container .button_yes:hover,
+body .container .button_yes:focus {
   top: -7px;
-
   box-shadow: 0 10px 15px 0 #1eacf5;
 }
 
@@ -131,9 +131,9 @@ body .container .button_yes:before {
   top: 50%;
   margin-top: -63px;
   pointer-events: none;
-
   transition: 0.3s;
   filter: hue-rotate(180deg);
+
   @media screen and(max-width: 767px) {
     content: none;
   }
@@ -156,10 +156,9 @@ body .container .flex_form input {
   padding: 13px 50px;
   border: none;
 }
+
 .offer_row input {
   display: inline-block;
-  //   width: auto;
-  //   float: left;
   margin: 0;
   margin-right: 5px;
 }
@@ -178,13 +177,13 @@ body .container .flex_form input {
     background-color: transparent;
   }
 }
+
 .logos_wr {
   margin-bottom: 16px;
 }
 
 body .container .flex_list {
   list-style: none;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
